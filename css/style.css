@@ -1,0 +1,217 @@
+.header
+{
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    
+}
+.header_img
+{
+
+}
+.image
+{
+    width: 100%;
+    height: 100vh;
+}
+.write_area
+{
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    z-index: 1;
+    color: rgb(241, 245, 247);
+    font-weight: bolder;
+    background: rgba(106, 167, 228, 0.5);
+    padding: 100px;
+    border-radius: 20px;
+    animation-name: header_write_area;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes header_write_area {
+    0%{background: rgb(10, 29, 29);color: rgb(8, 179, 79) ;}
+    50%{background: rgb(59, 58, 56);color: #0bff40;width: 650px; height: 430px;}
+    100%{background: rgba(24, 23, 22, 1);color: #fdfdfd;width: 690px; height: 450px;padding: 150px; top: 100px;}
+    
+}
+.middle
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url('/img/camera.jpg');
+    background-attachment: fixed;
+}
+.mid_section
+{
+    background-color: rgb(2, 16, 22);
+}
+.middle_write
+{
+    position: absolute;
+    top: 110px;
+    background-color: rgba(230, 13, 13, 0.7);
+    color: #f9f7fc;
+    width: 100%;
+    padding: 10px;
+}
+.middle_write h1
+{
+    margin-left: 480px;
+}
+.left_mid
+{
+    margin-top: 0px;
+    width: 550px;
+    //background-color: rosybrown;
+    padding: 15px;
+    animation-name: left_mid_area;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes left_mid_area {
+    0%   {background-color: #1a1515; color: rgb(248, 248, 248);}
+  50%  {background-color:rgb(63, 66, 64); color: rgb(5, 255, 88);}
+  100% {background-color:rgb(29, 28, 28); color: #f9ffff;}
+    
+}
+.right_mid_img
+{
+    margin-top: -3px;
+}
+.img_class
+{
+    background-color: rgb(3, 41, 58);
+    margin-top: -600px;
+    width: 800px;
+    height: 600px;
+    margin-left: 546px;
+}
+
+.after_middle
+{
+    margin-top: -10px;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url('/img/lake_mountain.jpg');
+    background-attachment: fixed;
+}
+.after_middle_write
+{
+    position: absolute;
+    top: 110px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #030007;
+    width: 100%;
+    padding: 10px;
+}
+.after_middle_write h1
+{
+    margin-left: 480px;
+}
+
+//after_mid_section starts**************
+
+.after_left_mid_img
+{
+    
+}
+.after_img_class
+{
+    background-color: rgb(187, 52, 52);
+    width: 695px;
+    height: 600px;
+}
+.after_right_mid
+{
+    width: 650px;
+    background-color: rgb(7, 0, 0);
+    color: chartreuse;
+    padding: 15px;
+    margin-top: -600px;
+    height: 600px;
+    margin-left: -700px;
+    animation: right_mid_area 1.5s forwards,
+    right_mid_area2 4s infinite;
+}
+@keyframes right_mid_area {
+    form{margin-left: 1000px;}
+    to{margin-left: 695px;}
+}
+@keyframes right_mid_area2 {
+    0%{background-color: #000000; color: chartreuse;}
+    25%{background-color: rgb(10, 46, 46);color: rgb(16, 245, 8);}
+    50%{background-color:rgb(23, 26, 27); color: rgb(16, 245, 8);}
+    100%{background-color: rgb(2, 16, 22); color: rgb(241, 245, 247);}
+}
+
+/*HERE card starts*/
+#tutorial{
+    padding: 4% 5%;
+    background-color: #a3d2ca;
+}
+.text-center 
+{
+    padding: 40px;
+    color: rgb(7, 0, 0);
+    
+}
+.section-title
+{
+    background-color: rgb(160, 148, 236);
+}
+.card{
+    transition: 1s;
+    border: 1px solid #161516;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 6px 10px #131112;
+}
+/*contact section starts*/
+.contact_me
+{
+    width: 100%;
+    height: 600px;
+    background: #000;
+}
+.link_section ul
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 220px;
+    list-style: none;
+}
+.link_section ul li{
+    display: inline-block;
+    margin: 0 30px;
+    margin-top: 15px;
+}
+ul li a{
+    width: 90px;
+    height: 90px;
+    display: block;
+    background: #000000;
+    color: rgb(241, 237, 237);
+    padding: 20px;
+    transition: 0.5s;
+}
+ul li a:hover{
+    background: rgb(241, 237, 237);
+    color: rgb(39, 2, 126);
+    border-radius: 15px;
+}
+.footer
+{
+    background: rgb(11, 120, 153);
+    color: oldlace;
+    text-align: center;
+    height: 30px;
+}
