@@ -41,7 +41,7 @@
     position: relative;
     width: 100%;
     height: 300px;
-    background-image: url('/img/camera.jpg');
+    background-image: url('../img/camera.jpg');
     background-attachment: fixed;
 }
 .mid_section
@@ -52,8 +52,8 @@
 {
     position: absolute;
     top: 110px;
-    background-color: rgba(230, 13, 13, 0.7);
-    color: #f9f7fc;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: hsl(264, 45%, 98%);
     width: 100%;
     padding: 10px;
 }
@@ -74,13 +74,13 @@
 
 @keyframes left_mid_area {
     0%   {background-color: #1a1515; color: rgb(248, 248, 248);}
-  50%  {background-color:rgb(63, 66, 64); color: rgb(5, 255, 88);}
-  100% {background-color:rgb(29, 28, 28); color: #f9ffff;}
+  50%  {background-color:rgb(23, 26, 24); color: rgb(5, 255, 88);}
+  100% {background-color:rgb(29, 28, 28); color: hsl(0, 0%, 99%);}
     
 }
 .right_mid_img
 {
-    margin-top: -3px;
+    margin-top: -10px;
 }
 .img_class
 {
@@ -97,15 +97,15 @@
     position: relative;
     width: 100%;
     height: 300px;
-    background-image: url('/img/lake_mountain.jpg');
+    background-image: url('../img/leaf.jpg');
     background-attachment: fixed;
 }
 .after_middle_write
 {
     position: absolute;
     top: 110px;
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #030007;
+    background-color: rgba(21, 27, 21, 0.774);
+    color: #fefeff;
     width: 100%;
     padding: 10px;
 }
@@ -144,21 +144,34 @@
 }
 @keyframes right_mid_area2 {
     0%{background-color: #000000; color: chartreuse;}
-    25%{background-color: rgb(10, 46, 46);color: rgb(16, 245, 8);}
-    50%{background-color:rgb(23, 26, 27); color: rgb(16, 245, 8);}
-    100%{background-color: rgb(2, 16, 22); color: rgb(241, 245, 247);}
+    25%{background-color: rgb(10, 46, 46);color: rgb(255, 255, 255);}
+    50%{background-color:rgb(23, 26, 27); color: rgb(255, 255, 255);}
+    100%{background-color: rgb(2, 16, 22); color: rgb(39, 255, 20);}
 }
 
 /*HERE card starts*/
+.sample_work{
+
+}
 #tutorial{
     padding: 4% 5%;
-    background-color: #a3d2ca;
+    background-color: #151b1a;
+}
+.card-body
+{
+    background: rgb(102, 34, 34);
 }
 .text-center 
 {
     padding: 40px;
     color: rgb(7, 0, 0);
-    
+    animation: text-area-animation 4s infinite;
+}
+@keyframes text-area-animation {
+    0%{background-color: #000000; color: rgb(254, 255, 251);}
+    25%{background-color: #000000;color: #25ff80;}
+    50%{background-color:#000000; color: rgb(255, 198, 9);}
+    100%{background-color: #000000; color: rgb(21, 103, 255);}
 }
 .section-title
 {
@@ -173,12 +186,37 @@
     box-shadow: 5px 6px 10px #131112;
 }
 /*contact section starts*/
+.middle_last
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url('../img/trees2.jpg');
+    background-attachment: fixed;
+}
+.middle_last_write
+{
+    position: absolute;
+    top: 110px;
+    background-color: rgba(230, 13, 13, 0.7);
+    color: #f9f7fc;
+    width: 100%;
+    padding: 10px;
+}
+.middle_last_write h1
+{
+    margin-left: 480px;
+}
+
+
+
 .contact_me
 {
     width: 100%;
     height: 600px;
     background: #000;
 }
+
 .link_section ul
 {
     position: relative;
